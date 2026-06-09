@@ -22,3 +22,17 @@ jobs:
         uses: astral-sh/ruff-action@v3
         with:
           args: "format --check"
+
+name: Clang Format Checker
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  clang-format-checking:
+    runs-on: ubuntu-latest
+    steps:
+        uses: RafikFarhad/clang-format-github-action@v6.0.1
+        with:
+          sources: "src/*.cpp,src/*.h"
