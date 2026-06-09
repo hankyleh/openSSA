@@ -28,6 +28,7 @@ jobs:
   clang-format-checking:
     runs-on: ubuntu-latest
     steps:
+      - name: Check Clang Formatting
         uses: RafikFarhad/clang-format-github-action@v6.0.1
         with:
           sources: "src/*.cpp,src/*.h"
