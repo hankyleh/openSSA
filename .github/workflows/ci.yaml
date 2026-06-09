@@ -23,12 +23,7 @@ jobs:
         with:
           args: "format --check"
 
-name: Clang Format Checker
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+
 
   clang-format-checking:
     runs-on: ubuntu-latest
