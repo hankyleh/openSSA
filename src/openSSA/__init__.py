@@ -1,1 +1,1 @@
-from ._openSSA import add
+from ._openSSA import add as add
