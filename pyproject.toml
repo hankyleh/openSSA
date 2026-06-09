@@ -1,0 +1,30 @@
+[project]
+name="openSSA"
+version = "0.0.0"
+authors = [
+	{name = "Kyle Hansen", email = "khansen3@ncsu.edu"}
+]
+description = "Suite for simulation of stochastic populations (chemical, neutronic, etc.) using Gillespie's Stochastic Simulation Algorithm (SSA), tau-leaping, and related tools."
+readme = "README.md"
+license = "BSD-3-Clause"
+keywords = ["stochastic chemical kinetics", "Monte Carlo", "MLMC"]
+classifiers = [
+	"Development Status :: 1 - Planning",
+	"Intended Audience :: Researchers",
+	"Programming Language :: Python :: 3.14"
+]
+dependencies = [
+	"numpy"	
+]
+requires-python = ">=3.9"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"
