@@ -1,15 +1,7 @@
 [build-system]
-requires = [
-  "scikit-build-core>=0.9",
-  "pybind11>=2.12",
-  "mpi4py"
-]
-build-backend = "scikit_build_core.build"
+requires = ["setuptools>=68", "pybind11>=2.12"]
+build-backend = "setuptools.build_meta"
 
-# ---------------------------------------------------------------------------
-# Project metadata (PEP 621)
-# All fields here end up in the wheel's METADATA and on PyPI.
-# ---------------------------------------------------------------------------
 [project]
 name = "openSSA"                        # PyPI distribution name (kebab-case)
 description = " Suite for simulation of stochastic populations (chemical, neutronic, etc.) using Gillespie's Stochastic Simulation Algorithm (SSA), tau-leaping, and related tools. "
